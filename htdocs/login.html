@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>用户登录验证</title>
+	<link rel="stylesheet" type="text/css" href="/css/css.css"/>
+	<script type = "text/javascript">
+			function validate(){
+				var username=document.getElementById('admin_username').value;
+				var password=document.getElementById('admin_password').value;
+				if(username=="admin"&&password=="123456"){
+					window.location.href = 'YZindex.html';
+				}
+				else{
+					alert("用户名或密码错");
+					return false;
+				}
+			}
+	</script>
+</head>
+<br><br><br><br>
+<br><br><br><br>
+<tr>
+  <td width="35%"></td>
+  <td width="30%">
+<table class="box2" align="center">
+<tbody>
+<tr height="45px;"></tr>
+<tr>
+	<td class="base" width="40%" align="rigth">用户名：</td>
+	<td width="20%"><input name="ADMIN_USERNAME" id="admin_username" type="text"></td>
+	<td width="40%"></td>
+</tr>      
+<tr>
+    <td class="base" width="40%">密　码：</td>
+	<td width="20%"><input name="ADMIN_PASSWORD" id="admin_password" type="password"></td>
+	<td width="40%"></td>
+</tr>
+<tr>
+     <td width="40%"></td>
+     <td width="20%" align="right"><input name="ACTION_LOGIN" value="登录" type="button" onclick='validate()'></td>
+	 <td width="40%"></td>
+</tr>
+<tr height="30px;"></tr>
+</tbody>
+</table>
+   </td>
+<td width="35%"></td>
+</tr>
+</html>

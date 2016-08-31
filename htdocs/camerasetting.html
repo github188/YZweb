@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>摄像机设置</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<script>
+	function submit2(){
+			alert("上传成功");
+			document.camerasetupload.action="../cgi-bin/camerasetupload.cgi";
+			document.camerasetupload.submit();
+		}
+</script>
+</head>
+
+
+<body>
+<div>
+	<iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src='header.html' width="100%"  height="110"></iframe>
+</div>
+
+<div>
+	<iframe src="../cgi-bin/demo.cgi" style="margin-left:20%; width:60%;height:400px" ></iframe>
+</div>
+
+<br>
+<div style='text-align:center;'>
+<table style='margin:auto;'>
+<tr>
+<td style='text-align:center;'><input type="button" value="下载cam.bin" onclick="window.location.href='data/cam.bin'"></td>
+<td style='text-align:center;'><input type="button" value="下载cam_title.bin" onclick="window.location.href='data/cam_title.bin'"></td>
+<td style='width:150px;'></td>
+<form name='camerasetupload' method='POST' ENCTYPE="multipart/form-data" target='server'>
+<td style='width:300px;text-align:center;'><input type='file' name='FILE1' id='FILE1' style='width:160px'><input type='button' onclick='submit2()' value='上传文件'></td>
+</form>
+</tr>
+</table>
+</div>
+
+<!--底部信息-->
+<div style="width:950px;margin:50px auto;line-height:24px;clear:both; font-weight:normal; font-size:12px;">
+<ul id="bottominfo">
+<li><a align="right" href="">@2000-2015 上海远哲电子技术有限公司</a></li>
+</div>
+</body>
+</html>

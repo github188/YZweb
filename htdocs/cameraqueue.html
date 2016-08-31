@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>摄像机队列</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<script type="text/javascript" language="javascript">
+function submit1(){
+	document.cameraqueuedownload.action="../cgi-bin/cameraqueuedownload.cgi";
+	document.cameraqueuedownload.submit();
+}
+function submit2(){
+	document.cameraqueueupload.action="../cgi-bin/cameraqueueupload.cgi";
+	document.cameraqueueupload.submit();
+}
+</script>
+</head>
+
+<body>
+<iframe name='server' style='display:none;' src=''></iframe>
+<form name='cameraqueuedownload' method='POST' target='server'>
+<div>
+	<iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src='header.html' width="100%"  height="110"></iframe>
+</div>
+
+<div class="box3">
+<table>
+<tr>
+<td class='caption' style='text-align:left;'>延时设置</td>
+</tr>
+</table>
+<table  align="center">
+<tr>
+<td>
+<div style="overflow:auto;width:730px;height:100%">
+<table>
+<tr>
+	<td>监视器1切换时间</td><td>监视器2切换时间</td><td>监视器3切换时间</td><td>监视器4切换时间</td>
+	<td>监视器5切换时间</td><td>监视器6切换时间</td><td>监视器7切换时间</td><td>监视器8切换时间</td>
+	<td>监视器9切换时间</td><td>监视器10切换时间</td><td>监视器11切换时间</td><td>监视器12切换时间</td>
+	<td>监视器13切换时间</td><td>监视器14切换时间</td><td>监视器15切换时间</td><td>监视器16切换时间</td>
+</tr>
+<tr>
+	<td><input type='text' name='cct1'></td><td><input type='text' name='cct2'></td><td><input type='text' name='cct3'></td>
+	<td><input type='text' name='cct4'></td><td><input type='text' name='cct5'></td><td><input type='text' name='cct6'></td>
+	<td><input type='text' name='cct7'></td><td><input type='text' name='cct8'></td><td><input type='text' name='cct9'></td>
+	<td><input type='text' name='cct10'></td><td><input type='text' name='cct11'></td><td><input type='text' name='cct12'></td>
+	<td><input type='text' name='cct13'></td><td><input type='text' name='cct14'></td><td><input type='text' name='cct15'></td>
+	<td><input type='text' name='cct16'></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+<div class='box3'>
+<table><tr><td class='caption' style='text-align:left;'>队列设置</td></tr></table>
+<table align='center'>
+<tr>
+<td>
+<div style='overflow:auto;width:730px;height:545px;'>
+<table>
+<tr>
+	<td style="height:50%">编号</td>
+	<td>摄像机1</td><td>摄像机2</td><td>摄像机3</td><td>摄像机4</td><td>摄像机5</td>
+	<td>摄像机6</td><td>摄像机7</td><td>摄像机8</td><td>摄像机9</td><td>摄像机10</td>
+	<td>摄像机11</td><td>摄像机12</td><td>摄像机13</td><td>摄像机14</td>
+	<td>摄像机15</td><td>摄像机16</td><td>摄像机17</td><td>摄像机18</td>
+	<td>摄像机19</td><td>摄像机20</td><td>摄像机21</td><td>摄像机22</td>
+	<td>摄像机23</td><td>摄像机24</td><td>摄像机25</td><td>摄像机26</td>
+	<td>摄像机27</td><td>摄像机28</td><td>摄像机29</td><td>摄像机30</td>
+	<td>摄像机31</td><td>摄像机32</td><td>摄像机33</td><td>摄像机34</td>
+	<td>摄像机35</td><td>摄像机36</td><td>摄像机37</td><td>摄像机38</td>
+	<td>摄像机39</td><td>摄像机40</td><td>摄像机41</td><td>摄像机42</td>
+	<td>摄像机43</td><td>摄像机44</td><td>摄像机45</td><td>摄像机46</td>
+	<td>摄像机47</td><td>摄像机48</td><td>摄像机49</td><td>摄像机50</td>
+	<td>摄像机51</td><td>摄像机52</td><td>摄像机53</td><td>摄像机54</td>
+	<td>摄像机55</td><td>摄像机56</td><td>摄像机57</td><td>摄像机58</td>
+	<td>摄像机59</td><td>摄像机60</td><td>摄像机61</td><td>摄像机62</td>
+	<td>摄像机63</td><td>摄像机64</td>
+</tr>
+<tr>
+	<td><input type='text' value=1></td>
+	<td><input type='text' name='s11'></td><td><input type='text' name='s12'></td><td><input type='text' name='s13'></td><td><input type='text' name='s14'></td>
+	<td><input type='text' name='s15'></td><td><input type='text' name='s16'></td><td><input type='text' name='s17'></td><td><input type='text' name='s18'></td>
+	<td><input type='text' name='s19'></td><td><input type='text' name='s110'></td><td><input type='text' name='s111'></td><td><input type='text' name='s112'></td>
+	<td><input type='text' name='s113'></td><td><input type='text' name='s114'></td><td><input type='text' name='s115'></td><td><input type='text' name='s116'></td>
+	<td><input type='text' name='s117'></td><td><input type='text' name='s118'></td><td><input type='text' name='s119'></td><td><input type='text' name='s120'></td>
+	<td><input type='text' name='s121'></td><td><input type='text' name='s122'></td><td><input type='text' name='s123'></td><td><input type='text' name='s124'></td>
+	<td><input type='text' name='s125'></td><td><input type='text' name='s126'></td><td><input type='text' name='s127'></td><td><input type='text' name='s128'></td>
+	<td><input type='text' name='s129'></td><td><input type='text' name='s130'></td><td><input type='text' name='s131'></td><td><input type='text' name='s132'></td>
+	<td><input type='text' name='s133'></td><td><input type='text' name='s134'></td><td><input type='text' name='s135'></td><td><input type='text' name='s136'></td>
+	<td><input type='text' name='s137'></td><td><input type='text' name='s138'></td><td><input type='text' name='s139'></td><td><input type='text' name='s140'></td>
+	<td><input type='text' name='s141'></td><td><input type='text' name='s142'></td><td><input type='text' name='s143'></td><td><input type='text' name='s144'></td>
+	<td><input type='text' name='s145'></td><td><input type='text' name='s146'></td><td><input type='text' name='s147'></td><td><input type='text' name='s148'></td>
+	<td><input type='text' name='s149'></td><td><input type='text' name='s150'></td><td><input type='text' name='s151'></td><td><input type='text' name='s152'></td>
+	<td><input type='text' name='s153'></td><td><input type='text' name='s154'></td><td><input type='text' name='s155'></td><td><input type='text' name='s156'></td>
+	<td><input type='text' name='s157'></td><td><input type='text' name='s158'></td><td><input type='text' name='s159'></td><td><input type='text' name='s160'></td>
+	<td><input type='text' name='s161'></td><td><input type='text' name='s162'></td><td><input type='text' name='s163'></td><td><input type='text' name='s164'></td>
+</tr>
+<tr>
+	<td><input type='text' value=2></td>
+	<td><input type='text' name='s21'></td><td><input type='text' name='s22'></td><td><input type='text' name='s23'></td><td><input type='text' name='s24'></td>
+	<td><input type='text' name='s25'></td><td><input type='text' name='s26'></td><td><input type='text' name='s27'></td><td><input type='text' name='s28'></td>
+	<td><input type='text' name='s29'></td><td><input type='text' name='s210'></td><td><input type='text' name='s211'></td><td><input type='text' name='s212'></td>
+	<td><input type='text' name='s213'></td><td><input type='text' name='s214'></td><td><input type='text' name='s215'></td><td><input type='text' name='s216'></td>
+	<td><input type='text' name='s217'></td><td><input type='text' name='s218'></td><td><input type='text' name='s219'></td><td><input type='text' name='s220'></td>
+	<td><input type='text' name='s221'></td><td><input type='text' name='s222'></td><td><input type='text' name='s223'></td><td><input type='text' name='s224'></td>
+	<td><input type='text' name='s225'></td><td><input type='text' name='s226'></td><td><input type='text' name='s227'></td><td><input type='text' name='s228'></td>
+	<td><input type='text' name='s229'></td><td><input type='text' name='s230'></td><td><input type='text' name='s231'></td><td><input type='text' name='s232'></td>
+	<td><input type='text' name='s233'></td><td><input type='text' name='s234'></td><td><input type='text' name='s235'></td><td><input type='text' name='s236'></td>
+	<td><input type='text' name='s237'></td><td><input type='text' name='s238'></td><td><input type='text' name='s239'></td><td><input type='text' name='s240'></td>
+	<td><input type='text' name='s241'></td><td><input type='text' name='s242'></td><td><input type='text' name='s243'></td><td><input type='text' name='s244'></td>
+	<td><input type='text' name='s245'></td><td><input type='text' name='s246'></td><td><input type='text' name='s247'></td><td><input type='text' name='s248'></td>
+	<td><input type='text' name='s249'></td><td><input type='text' name='s250'></td><td><input type='text' name='s251'></td><td><input type='text' name='s252'></td>
+	<td><input type='text' name='s253'></td><td><input type='text' name='s254'></td><td><input type='text' name='s255'></td><td><input type='text' name='s256'></td>
+	<td><input type='text' name='s257'></td><td><input type='text' name='s258'></td><td><input type='text' name='s259'></td><td><input type='text' name='s260'></td>
+	<td><input type='text' name='s261'></td><td><input type='text' name='s262'></td><td><input type='text' name='s263'></td><td><input type='text' name='s264'></td>
+</tr>
+<tr>
+	<td><input type='text' value=3></td>
+	<td><input type='text' name='s31'></td><td><input type='text' name='s32'></td><td><input type='text' name='s33'></td><td><input type='text' name='s34'></td>
+	<td><input type='text' name='s35'></td><td><input type='text' name='s36'></td><td><input type='text' name='s37'></td><td><input type='text' name='s38'></td>
+	<td><input type='text' name='s39'></td><td><input type='text' name='s310'></td><td><input type='text' name='s311'></td><td><input type='text' name='s312'></td>
+	<td><input type='text' name='s313'></td><td><input type='text' name='s314'></td><td><input type='text' name='s315'></td><td><input type='text' name='s316'></td>
+	<td><input type='text' name='s317'></td><td><input type='text' name='s318'></td><td><input type='text' name='s319'></td><td><input type='text' name='s320'></td>
+	<td><input type='text' name='s321'></td><td><input type='text' name='s322'></td><td><input type='text' name='s323'></td><td><input type='text' name='s324'></td>
+	<td><input type='text' name='s325'></td><td><input type='text' name='s326'></td><td><input type='text' name='s327'></td><td><input type='text' name='s328'></td>
+	<td><input type='text' name='s329'></td><td><input type='text' name='s330'></td><td><input type='text' name='s331'></td><td><input type='text' name='s332'></td>
+	<td><input type='text' name='s333'></td><td><input type='text' name='s334'></td><td><input type='text' name='s335'></td><td><input type='text' name='s336'></td>
+	<td><input type='text' name='s337'></td><td><input type='text' name='s338'></td><td><input type='text' name='s339'></td><td><input type='text' name='s340'></td>
+	<td><input type='text' name='s341'></td><td><input type='text' name='s342'></td><td><input type='text' name='s343'></td><td><input type='text' name='s344'></td>
+	<td><input type='text' name='s345'></td><td><input type='text' name='s346'></td><td><input type='text' name='s347'></td><td><input type='text' name='s348'></td>
+	<td><input type='text' name='s349'></td><td><input type='text' name='s350'></td><td><input type='text' name='s351'></td><td><input type='text' name='s352'></td>
+	<td><input type='text' name='s353'></td><td><input type='text' name='s354'></td><td><input type='text' name='s355'></td><td><input type='text' name='s356'></td>
+	<td><input type='text' name='s357'></td><td><input type='text' name='s358'></td><td><input type='text' name='s359'></td><td><input type='text' name='s360'></td>
+	<td><input type='text' name='s361'></td><td><input type='text' name='s362'></td><td><input type='text' name='s363'></td><td><input type='text' name='s364'></td>
+</tr>
+<tr>
+	<td><input type='text' value=4></td>	
+	<td><input type='text' name='s41'></td><td><input type='text' name='s42'></td><td><input type='text' name='s43'></td><td><input type='text' name='s44'></td>
+	<td><input type='text' name='s45'></td><td><input type='text' name='s46'></td><td><input type='text' name='s47'></td><td><input type='text' name='s48'></td>
+	<td><input type='text' name='s49'></td><td><input type='text' name='s410'></td><td><input type='text' name='s411'></td><td><input type='text' name='s412'></td>
+	<td><input type='text' name='s413'></td><td><input type='text' name='s414'></td><td><input type='text' name='s415'></td><td><input type='text' name='s416'></td>
+	<td><input type='text' name='s417'></td><td><input type='text' name='s418'></td><td><input type='text' name='s419'></td><td><input type='text' name='s420'></td>
+	<td><input type='text' name='s421'></td><td><input type='text' name='s422'></td><td><input type='text' name='s423'></td><td><input type='text' name='s424'></td>
+	<td><input type='text' name='s425'></td><td><input type='text' name='s426'></td><td><input type='text' name='s427'></td><td><input type='text' name='s428'></td>
+	<td><input type='text' name='s429'></td><td><input type='text' name='s430'></td><td><input type='text' name='s431'></td><td><input type='text' name='s432'></td>
+	<td><input type='text' name='s433'></td><td><input type='text' name='s434'></td><td><input type='text' name='s435'></td><td><input type='text' name='s436'></td>
+	<td><input type='text' name='s437'></td><td><input type='text' name='s438'></td><td><input type='text' name='s439'></td><td><input type='text' name='s440'></td>
+	<td><input type='text' name='s441'></td><td><input type='text' name='s442'></td><td><input type='text' name='s443'></td><td><input type='text' name='s444'></td>
+	<td><input type='text' name='s445'></td><td><input type='text' name='s446'></td><td><input type='text' name='s447'></td><td><input type='text' name='s448'></td>
+	<td><input type='text' name='s449'></td><td><input type='text' name='s450'></td><td><input type='text' name='s451'></td><td><input type='text' name='s452'></td>
+	<td><input type='text' name='s453'></td><td><input type='text' name='s454'></td><td><input type='text' name='s455'></td><td><input type='text' name='s456'></td>
+	<td><input type='text' name='s457'></td><td><input type='text' name='s458'></td><td><input type='text' name='s459'></td><td><input type='text' name='s460'></td>
+	<td><input type='text' name='s461'></td><td><input type='text' name='s462'></td><td><input type='text' name='s463'></td><td><input type='text' name='s464'></td>
+</tr>
+<tr>
+	<td><input type='text' value=5></td>
+	<td><input type='text' name='s51'></td><td><input type='text' name='s52'></td><td><input type='text' name='s53'></td><td><input type='text' name='s54'></td>
+	<td><input type='text' name='s55'></td><td><input type='text' name='s56'></td><td><input type='text' name='s57'></td><td><input type='text' name='s58'></td>
+	<td><input type='text' name='s59'></td><td><input type='text' name='s510'></td><td><input type='text' name='s511'></td><td><input type='text' name='s512'></td>
+	<td><input type='text' name='s513'></td><td><input type='text' name='s514'></td><td><input type='text' name='s515'></td><td><input type='text' name='s516'></td>
+	<td><input type='text' name='s517'></td><td><input type='text' name='s518'></td><td><input type='text' name='s519'></td><td><input type='text' name='s520'></td>
+	<td><input type='text' name='s521'></td><td><input type='text' name='s522'></td><td><input type='text' name='s523'></td><td><input type='text' name='s524'></td>
+	<td><input type='text' name='s525'></td><td><input type='text' name='s526'></td><td><input type='text' name='s527'></td><td><input type='text' name='s528'></td>
+	<td><input type='text' name='s529'></td><td><input type='text' name='s530'></td><td><input type='text' name='s531'></td><td><input type='text' name='s532'></td>
+	<td><input type='text' name='s533'></td><td><input type='text' name='s534'></td><td><input type='text' name='s535'></td><td><input type='text' name='s536'></td>
+	<td><input type='text' name='s537'></td><td><input type='text' name='s538'></td><td><input type='text' name='s539'></td><td><input type='text' name='s540'></td>
+	<td><input type='text' name='s541'></td><td><input type='text' name='s542'></td><td><input type='text' name='s543'></td><td><input type='text' name='s544'></td>
+	<td><input type='text' name='s545'></td><td><input type='text' name='s546'></td><td><input type='text' name='s547'></td><td><input type='text' name='s548'></td>
+	<td><input type='text' name='s549'></td><td><input type='text' name='s550'></td><td><input type='text' name='s551'></td><td><input type='text' name='s552'></td>
+	<td><input type='text' name='s553'></td><td><input type='text' name='s554'></td><td><input type='text' name='s555'></td><td><input type='text' name='s556'></td>
+	<td><input type='text' name='s557'></td><td><input type='text' name='s558'></td><td><input type='text' name='s559'></td><td><input type='text' name='s560'></td>
+	<td><input type='text' name='s561'></td><td><input type='text' name='s562'></td><td><input type='text' name='s563'></td><td><input type='text' name='s564'></td>
+</tr>
+<tr>
+	<td><input type='text' value=6></td>
+	<td><input type='text' name='s61'></td><td><input type='text' name='s62'></td><td><input type='text' name='s63'></td><td><input type='text' name='s64'></td>
+	<td><input type='text' name='s65'></td><td><input type='text' name='s66'></td><td><input type='text' name='s67'></td><td><input type='text' name='s68'></td>
+	<td><input type='text' name='s69'></td><td><input type='text' name='s610'></td><td><input type='text' name='s611'></td><td><input type='text' name='s612'></td>
+	<td><input type='text' name='s613'></td><td><input type='text' name='s614'></td><td><input type='text' name='s615'></td><td><input type='text' name='s616'></td>
+	<td><input type='text' name='s617'></td><td><input type='text' name='s618'></td><td><input type='text' name='s619'></td><td><input type='text' name='s620'></td>
+	<td><input type='text' name='s621'></td><td><input type='text' name='s622'></td><td><input type='text' name='s623'></td><td><input type='text' name='s624'></td>
+	<td><input type='text' name='s625'></td><td><input type='text' name='s626'></td><td><input type='text' name='s627'></td><td><input type='text' name='s628'></td>
+	<td><input type='text' name='s629'></td><td><input type='text' name='s630'></td><td><input type='text' name='s631'></td><td><input type='text' name='s632'></td>
+	<td><input type='text' name='s633'></td><td><input type='text' name='s634'></td><td><input type='text' name='s635'></td><td><input type='text' name='s636'></td>
+	<td><input type='text' name='s637'></td><td><input type='text' name='s638'></td><td><input type='text' name='s639'></td><td><input type='text' name='s640'></td>
+	<td><input type='text' name='s641'></td><td><input type='text' name='s642'></td><td><input type='text' name='s643'></td><td><input type='text' name='s644'></td>
+	<td><input type='text' name='s645'></td><td><input type='text' name='s646'></td><td><input type='text' name='s647'></td><td><input type='text' name='s648'></td>
+	<td><input type='text' name='s649'></td><td><input type='text' name='s650'></td><td><input type='text' name='s651'></td><td><input type='text' name='s652'></td>
+	<td><input type='text' name='s653'></td><td><input type='text' name='s654'></td><td><input type='text' name='s655'></td><td><input type='text' name='s656'></td>
+	<td><input type='text' name='s657'></td><td><input type='text' name='s658'></td><td><input type='text' name='s659'></td><td><input type='text' name='s660'></td>
+	<td><input type='text' name='s661'></td><td><input type='text' name='s662'></td><td><input type='text' name='s663'></td><td><input type='text' name='s664'></td>
+</tr>
+<tr>
+	<td><input type='text' value=7></td>
+	<td><input type='text' name='s71'></td><td><input type='text' name='s72'></td><td><input type='text' name='s73'></td><td><input type='text' name='s74'></td>
+	<td><input type='text' name='s75'></td><td><input type='text' name='s76'></td><td><input type='text' name='s77'></td><td><input type='text' name='s78'></td>
+	<td><input type='text' name='s79'></td><td><input type='text' name='s710'></td><td><input type='text' name='s711'></td><td><input type='text' name='s712'></td>
+	<td><input type='text' name='s713'></td><td><input type='text' name='s714'></td><td><input type='text' name='s715'></td><td><input type='text' name='s716'></td>
+	<td><input type='text' name='s717'></td><td><input type='text' name='s718'></td><td><input type='text' name='s719'></td><td><input type='text' name='s720'></td>
+	<td><input type='text' name='s721'></td><td><input type='text' name='s722'></td><td><input type='text' name='s723'></td><td><input type='text' name='s724'></td>
+	<td><input type='text' name='s725'></td><td><input type='text' name='s726'></td><td><input type='text' name='s727'></td><td><input type='text' name='s728'></td>
+	<td><input type='text' name='s729'></td><td><input type='text' name='s730'></td><td><input type='text' name='s731'></td><td><input type='text' name='s732'></td>
+	<td><input type='text' name='s733'></td><td><input type='text' name='s734'></td><td><input type='text' name='s735'></td><td><input type='text' name='s736'></td>
+	<td><input type='text' name='s737'></td><td><input type='text' name='s738'></td><td><input type='text' name='s739'></td><td><input type='text' name='s740'></td>
+	<td><input type='text' name='s741'></td><td><input type='text' name='s742'></td><td><input type='text' name='s743'></td><td><input type='text' name='s744'></td>
+	<td><input type='text' name='s745'></td><td><input type='text' name='s746'></td><td><input type='text' name='s747'></td><td><input type='text' name='s748'></td>
+	<td><input type='text' name='s749'></td><td><input type='text' name='s750'></td><td><input type='text' name='s751'></td><td><input type='text' name='s752'></td>
+	<td><input type='text' name='s753'></td><td><input type='text' name='s754'></td><td><input type='text' name='s755'></td><td><input type='text' name='s756'></td>
+	<td><input type='text' name='s757'></td><td><input type='text' name='s758'></td><td><input type='text' name='s759'></td><td><input type='text' name='s760'></td>
+	<td><input type='text' name='s761'></td><td><input type='text' name='s762'></td><td><input type='text' name='s763'></td><td><input type='text' name='s764'></td>
+</tr>
+<tr>
+	<td><input type='text' value=8></td>
+	<td><input type='text' name='s81'></td><td><input type='text' name='s82'></td><td><input type='text' name='s83'></td><td><input type='text' name='s84'></td>
+	<td><input type='text' name='s85'></td><td><input type='text' name='s86'></td><td><input type='text' name='s87'></td><td><input type='text' name='s88'></td>
+	<td><input type='text' name='s89'></td><td><input type='text' name='s810'></td><td><input type='text' name='s811'></td><td><input type='text' name='s812'></td>
+	<td><input type='text' name='s813'></td><td><input type='text' name='s814'></td><td><input type='text' name='s815'></td><td><input type='text' name='s816'></td>
+	<td><input type='text' name='s817'></td><td><input type='text' name='s818'></td><td><input type='text' name='s819'></td><td><input type='text' name='s820'></td>
+	<td><input type='text' name='s821'></td><td><input type='text' name='s822'></td><td><input type='text' name='s823'></td><td><input type='text' name='s824'></td>
+	<td><input type='text' name='s825'></td><td><input type='text' name='s826'></td><td><input type='text' name='s827'></td><td><input type='text' name='s828'></td>
+	<td><input type='text' name='s829'></td><td><input type='text' name='s830'></td><td><input type='text' name='s831'></td><td><input type='text' name='s832'></td>
+	<td><input type='text' name='s833'></td><td><input type='text' name='s834'></td><td><input type='text' name='s835'></td><td><input type='text' name='s836'></td>
+	<td><input type='text' name='s837'></td><td><input type='text' name='s838'></td><td><input type='text' name='s839'></td><td><input type='text' name='s840'></td>
+	<td><input type='text' name='s841'></td><td><input type='text' name='s842'></td><td><input type='text' name='s843'></td><td><input type='text' name='s844'></td>
+	<td><input type='text' name='s845'></td><td><input type='text' name='s846'></td><td><input type='text' name='s847'></td><td><input type='text' name='s848'></td>
+	<td><input type='text' name='s849'></td><td><input type='text' name='s850'></td><td><input type='text' name='s851'></td><td><input type='text' name='s852'></td>
+	<td><input type='text' name='s853'></td><td><input type='text' name='s854'></td><td><input type='text' name='s855'></td><td><input type='text' name='s856'></td>
+	<td><input type='text' name='s857'></td><td><input type='text' name='s858'></td><td><input type='text' name='s859'></td><td><input type='text' name='s860'></td>
+	<td><input type='text' name='s861'></td><td><input type='text' name='s862'></td><td><input type='text' name='s863'></td><td><input type='text' name='s864'></td>
+</tr>
+<tr>
+	<td><input type='text' value=9></td>
+	<td><input type='text' name='s91'></td><td><input type='text' name='s92'></td><td><input type='text' name='s93'></td><td><input type='text' name='s94'></td>
+	<td><input type='text' name='s95'></td><td><input type='text' name='s96'></td><td><input type='text' name='s97'></td><td><input type='text' name='s98'></td>
+	<td><input type='text' name='s99'></td><td><input type='text' name='s910'></td><td><input type='text' name='s911'></td><td><input type='text' name='s912'></td>
+	<td><input type='text' name='s913'></td><td><input type='text' name='s914'></td><td><input type='text' name='s915'></td><td><input type='text' name='s916'></td>
+	<td><input type='text' name='s917'></td><td><input type='text' name='s918'></td><td><input type='text' name='s919'></td><td><input type='text' name='s920'></td>
+	<td><input type='text' name='s921'></td><td><input type='text' name='s922'></td><td><input type='text' name='s923'></td><td><input type='text' name='s924'></td>
+	<td><input type='text' name='s925'></td><td><input type='text' name='s926'></td><td><input type='text' name='s927'></td><td><input type='text' name='s928'></td>
+	<td><input type='text' name='s929'></td><td><input type='text' name='s930'></td><td><input type='text' name='s931'></td><td><input type='text' name='s932'></td>
+	<td><input type='text' name='s933'></td><td><input type='text' name='s934'></td><td><input type='text' name='s935'></td><td><input type='text' name='s936'></td>
+	<td><input type='text' name='s937'></td><td><input type='text' name='s938'></td><td><input type='text' name='s939'></td><td><input type='text' name='s940'></td>
+	<td><input type='text' name='s941'></td><td><input type='text' name='s942'></td><td><input type='text' name='s943'></td><td><input type='text' name='s944'></td>
+	<td><input type='text' name='s945'></td><td><input type='text' name='s946'></td><td><input type='text' name='s947'></td><td><input type='text' name='s948'></td>
+	<td><input type='text' name='s949'></td><td><input type='text' name='s950'></td><td><input type='text' name='s951'></td><td><input type='text' name='s952'></td>
+	<td><input type='text' name='s953'></td><td><input type='text' name='s954'></td><td><input type='text' name='s955'></td><td><input type='text' name='s956'></td>
+	<td><input type='text' name='s957'></td><td><input type='text' name='s958'></td><td><input type='text' name='s959'></td><td><input type='text' name='s960'></td>
+	<td><input type='text' name='s961'></td><td><input type='text' name='s962'></td><td><input type='text' name='s963'></td><td><input type='text' name='s964'></td>
+</tr>
+<tr>
+	<td><input type='text' value=10></td>
+	<td><input type='text' name='t101'></td><td><input type='text' name='t102'></td><td><input type='text' name='t103'></td><td><input type='text' name='t104'></td>
+	<td><input type='text' name='t105'></td><td><input type='text' name='t106'></td><td><input type='text' name='t107'></td><td><input type='text' name='t108'></td>
+	<td><input type='text' name='t109'></td><td><input type='text' name='t1010'></td><td><input type='text' name='t1011'></td><td><input type='text' name='t1012'></td>
+	<td><input type='text' name='t1013'></td><td><input type='text' name='t1014'></td><td><input type='text' name='t1015'></td><td><input type='text' name='t1016'></td>
+	<td><input type='text' name='t1017'></td><td><input type='text' name='t1018'></td><td><input type='text' name='t1019'></td><td><input type='text' name='t1020'></td>
+	<td><input type='text' name='t1021'></td><td><input type='text' name='t1022'></td><td><input type='text' name='t1023'></td><td><input type='text' name='t1024'></td>
+	<td><input type='text' name='t1025'></td><td><input type='text' name='t1026'></td><td><input type='text' name='t1027'></td><td><input type='text' name='t1028'></td>
+	<td><input type='text' name='t1029'></td><td><input type='text' name='t1030'></td><td><input type='text' name='t1031'></td><td><input type='text' name='t1032'></td>
+	<td><input type='text' name='t1033'></td><td><input type='text' name='t1034'></td><td><input type='text' name='t1035'></td><td><input type='text' name='t1036'></td>
+	<td><input type='text' name='t1037'></td><td><input type='text' name='t1038'></td><td><input type='text' name='t1039'></td><td><input type='text' name='t1040'></td>
+	<td><input type='text' name='t1041'></td><td><input type='text' name='t1042'></td><td><input type='text' name='t1043'></td><td><input type='text' name='t1044'></td>
+	<td><input type='text' name='t1045'></td><td><input type='text' name='t1046'></td><td><input type='text' name='t1047'></td><td><input type='text' name='t1048'></td>
+	<td><input type='text' name='t1049'></td><td><input type='text' name='t1050'></td><td><input type='text' name='t1051'></td><td><input type='text' name='t1052'></td>
+	<td><input type='text' name='t1053'></td><td><input type='text' name='t1054'></td><td><input type='text' name='t1055'></td><td><input type='text' name='t1056'></td>
+	<td><input type='text' name='t1057'></td><td><input type='text' name='t1058'></td><td><input type='text' name='t1059'></td><td><input type='text' name='t1060'></td>
+	<td><input type='text' name='t1061'></td><td><input type='text' name='t1062'></td><td><input type='text' name='t1063'></td><td><input type='text' name='t1064'></td>
+</tr>
+<tr>
+	<td><input type='text' value=11></td>
+	<td><input type='text' name='t111'></td><td><input type='text' name='t112'></td><td><input type='text' name='t113'></td><td><input type='text' name='t114'></td>
+	<td><input type='text' name='t115'></td><td><input type='text' name='t116'></td><td><input type='text' name='t117'></td><td><input type='text' name='t118'></td>
+	<td><input type='text' name='t119'></td><td><input type='text' name='t1110'></td><td><input type='text' name='t1111'></td><td><input type='text' name='t1112'></td>
+	<td><input type='text' name='t1113'></td><td><input type='text' name='t1114'></td><td><input type='text' name='t1115'></td><td><input type='text' name='t1116'></td>
+	<td><input type='text' name='t1117'></td><td><input type='text' name='t1118'></td><td><input type='text' name='t1119'></td><td><input type='text' name='t1120'></td>
+	<td><input type='text' name='t1121'></td><td><input type='text' name='t1122'></td><td><input type='text' name='t1123'></td><td><input type='text' name='t1124'></td>
+	<td><input type='text' name='t1125'></td><td><input type='text' name='t1126'></td><td><input type='text' name='t1127'></td><td><input type='text' name='t1128'></td>
+	<td><input type='text' name='t1129'></td><td><input type='text' name='t1130'></td><td><input type='text' name='t1131'></td><td><input type='text' name='t1132'></td>
+	<td><input type='text' name='t1133'></td><td><input type='text' name='t1134'></td><td><input type='text' name='t1135'></td><td><input type='text' name='t1136'></td>
+	<td><input type='text' name='t1137'></td><td><input type='text' name='t1138'></td><td><input type='text' name='t1139'></td><td><input type='text' name='t1140'></td>
+	<td><input type='text' name='t1141'></td><td><input type='text' name='t1142'></td><td><input type='text' name='t1143'></td><td><input type='text' name='t1144'></td>
+	<td><input type='text' name='t1145'></td><td><input type='text' name='t1146'></td><td><input type='text' name='t1147'></td><td><input type='text' name='t1148'></td>
+	<td><input type='text' name='t1149'></td><td><input type='text' name='t1150'></td><td><input type='text' name='t1151'></td><td><input type='text' name='t1152'></td>
+	<td><input type='text' name='t1153'></td><td><input type='text' name='t1154'></td><td><input type='text' name='t1155'></td><td><input type='text' name='t1156'></td>
+	<td><input type='text' name='t1157'></td><td><input type='text' name='t1158'></td><td><input type='text' name='t1159'></td><td><input type='text' name='t1160'></td>
+	<td><input type='text' name='t1161'></td><td><input type='text' name='t1162'></td><td><input type='text' name='t1163'></td><td><input type='text' name='t1164'></td>
+</tr>
+<tr>
+	<td><input type='text' value=12></td>
+	<td><input type='text' name='t121'></td><td><input type='text' name='t122'></td><td><input type='text' name='t123'></td><td><input type='text' name='t124'></td>
+	<td><input type='text' name='t125'></td><td><input type='text' name='t126'></td><td><input type='text' name='t127'></td><td><input type='text' name='t128'></td>
+	<td><input type='text' name='t129'></td><td><input type='text' name='t1210'></td><td><input type='text' name='t1211'></td><td><input type='text' name='t1212'></td>
+	<td><input type='text' name='t1213'></td><td><input type='text' name='t1214'></td><td><input type='text' name='t1215'></td><td><input type='text' name='t1216'></td>
+	<td><input type='text' name='t1217'></td><td><input type='text' name='t1218'></td><td><input type='text' name='t1219'></td><td><input type='text' name='t1220'></td>
+	<td><input type='text' name='t1221'></td><td><input type='text' name='t1222'></td><td><input type='text' name='t1223'></td><td><input type='text' name='t1224'></td>
+	<td><input type='text' name='t1225'></td><td><input type='text' name='t1226'></td><td><input type='text' name='t1227'></td><td><input type='text' name='t1228'></td>
+	<td><input type='text' name='t1229'></td><td><input type='text' name='t1230'></td><td><input type='text' name='t1231'></td><td><input type='text' name='t1232'></td>
+	<td><input type='text' name='t1233'></td><td><input type='text' name='t1234'></td><td><input type='text' name='t1235'></td><td><input type='text' name='t1236'></td>
+	<td><input type='text' name='t1237'></td><td><input type='text' name='t1238'></td><td><input type='text' name='t1239'></td><td><input type='text' name='t1240'></td>
+	<td><input type='text' name='t1241'></td><td><input type='text' name='t1242'></td><td><input type='text' name='t1243'></td><td><input type='text' name='t1244'></td>
+	<td><input type='text' name='t1245'></td><td><input type='text' name='t1246'></td><td><input type='text' name='t1247'></td><td><input type='text' name='t1248'></td>
+	<td><input type='text' name='t1249'></td><td><input type='text' name='t1250'></td><td><input type='text' name='t1251'></td><td><input type='text' name='t1252'></td>
+	<td><input type='text' name='t1253'></td><td><input type='text' name='t1254'></td><td><input type='text' name='t1255'></td><td><input type='text' name='t1256'></td>
+	<td><input type='text' name='t1257'></td><td><input type='text' name='t1258'></td><td><input type='text' name='t1259'></td><td><input type='text' name='t1260'></td>
+	<td><input type='text' name='t1261'></td><td><input type='text' name='t1262'></td><td><input type='text' name='t1263'></td><td><input type='text' name='t1264'></td>
+</tr>
+<tr>
+	<td><input type='text' value=13></td>
+	<td><input type='text' name='t131'></td><td><input type='text' name='t132'></td><td><input type='text' name='t133'></td><td><input type='text' name='t134'></td>
+	<td><input type='text' name='t135'></td><td><input type='text' name='t136'></td><td><input type='text' name='t137'></td><td><input type='text' name='t138'></td>
+	<td><input type='text' name='t139'></td><td><input type='text' name='t1310'></td><td><input type='text' name='t1311'></td><td><input type='text' name='t1312'></td>
+	<td><input type='text' name='t1313'></td><td><input type='text' name='t1314'></td><td><input type='text' name='t1315'></td><td><input type='text' name='t1316'></td>
+	<td><input type='text' name='t1317'></td><td><input type='text' name='t1318'></td><td><input type='text' name='t1319'></td><td><input type='text' name='t1320'></td>
+	<td><input type='text' name='t1321'></td><td><input type='text' name='t1322'></td><td><input type='text' name='t1323'></td><td><input type='text' name='t1324'></td>
+	<td><input type='text' name='t1325'></td><td><input type='text' name='t1326'></td><td><input type='text' name='t1327'></td><td><input type='text' name='t1328'></td>
+	<td><input type='text' name='t1329'></td><td><input type='text' name='t1330'></td><td><input type='text' name='t1331'></td><td><input type='text' name='t1332'></td>
+	<td><input type='text' name='t1333'></td><td><input type='text' name='t1334'></td><td><input type='text' name='t1335'></td><td><input type='text' name='t1336'></td>
+	<td><input type='text' name='t1337'></td><td><input type='text' name='t1338'></td><td><input type='text' name='t1339'></td><td><input type='text' name='t1340'></td>
+	<td><input type='text' name='t1341'></td><td><input type='text' name='t1342'></td><td><input type='text' name='t1343'></td><td><input type='text' name='t1344'></td>
+	<td><input type='text' name='t1345'></td><td><input type='text' name='t1346'></td><td><input type='text' name='t1347'></td><td><input type='text' name='t1348'></td>
+	<td><input type='text' name='t1349'></td><td><input type='text' name='t1350'></td><td><input type='text' name='t1351'></td><td><input type='text' name='t1352'></td>
+	<td><input type='text' name='t1353'></td><td><input type='text' name='t1354'></td><td><input type='text' name='t1355'></td><td><input type='text' name='t1356'></td>
+	<td><input type='text' name='t1357'></td><td><input type='text' name='t1358'></td><td><input type='text' name='t1359'></td><td><input type='text' name='t1360'></td>
+	<td><input type='text' name='t1361'></td><td><input type='text' name='t1362'></td><td><input type='text' name='t1363'></td><td><input type='text' name='t1364'></td>
+</tr>
+<tr>
+	<td><input type='text' value=14></td>
+	<td><input type='text' name='t141'></td><td><input type='text' name='t142'></td><td><input type='text' name='t143'></td><td><input type='text' name='t144'></td>
+	<td><input type='text' name='t145'></td><td><input type='text' name='t146'></td><td><input type='text' name='t147'></td><td><input type='text' name='t148'></td>
+	<td><input type='text' name='t149'></td><td><input type='text' name='t1410'></td><td><input type='text' name='t1411'></td><td><input type='text' name='t1412'></td>
+	<td><input type='text' name='t1413'></td><td><input type='text' name='t1414'></td><td><input type='text' name='t1415'></td><td><input type='text' name='t1416'></td>
+	<td><input type='text' name='t1417'></td><td><input type='text' name='t1418'></td><td><input type='text' name='t1419'></td><td><input type='text' name='t1420'></td>
+	<td><input type='text' name='t1421'></td><td><input type='text' name='t1422'></td><td><input type='text' name='t1423'></td><td><input type='text' name='t1424'></td>
+	<td><input type='text' name='t1425'></td><td><input type='text' name='t1426'></td><td><input type='text' name='t1427'></td><td><input type='text' name='t1428'></td>
+	<td><input type='text' name='t1429'></td><td><input type='text' name='t1430'></td><td><input type='text' name='t1431'></td><td><input type='text' name='t1432'></td>
+	<td><input type='text' name='t1433'></td><td><input type='text' name='t1434'></td><td><input type='text' name='t1435'></td><td><input type='text' name='t1436'></td>
+	<td><input type='text' name='t1437'></td><td><input type='text' name='t1438'></td><td><input type='text' name='t1439'></td><td><input type='text' name='t1440'></td>
+	<td><input type='text' name='t1441'></td><td><input type='text' name='t1442'></td><td><input type='text' name='t1443'></td><td><input type='text' name='t1444'></td>
+	<td><input type='text' name='t1445'></td><td><input type='text' name='t1446'></td><td><input type='text' name='t1447'></td><td><input type='text' name='t1448'></td>
+	<td><input type='text' name='t1449'></td><td><input type='text' name='t1450'></td><td><input type='text' name='t1451'></td><td><input type='text' name='t1452'></td>
+	<td><input type='text' name='t1453'></td><td><input type='text' name='t1454'></td><td><input type='text' name='t1455'></td><td><input type='text' name='t1456'></td>
+	<td><input type='text' name='t1457'></td><td><input type='text' name='t1458'></td><td><input type='text' name='t1459'></td><td><input type='text' name='t1460'></td>
+	<td><input type='text' name='t1461'></td><td><input type='text' name='t1462'></td><td><input type='text' name='t1463'></td><td><input type='text' name='t1464'></td>
+</tr>
+<tr>
+	<td><input type='text' value=15></td>
+	<td><input type='text' name='t151'></td><td><input type='text' name='t152'></td><td><input type='text' name='t153'></td><td><input type='text' name='t154'></td>
+	<td><input type='text' name='t155'></td><td><input type='text' name='t156'></td><td><input type='text' name='t157'></td><td><input type='text' name='t158'></td>
+	<td><input type='text' name='t159'></td><td><input type='text' name='t1510'></td><td><input type='text' name='t1511'></td><td><input type='text' name='t1512'></td>
+	<td><input type='text' name='t1513'></td><td><input type='text' name='t1514'></td><td><input type='text' name='t1515'></td><td><input type='text' name='t1516'></td>
+	<td><input type='text' name='t1517'></td><td><input type='text' name='t1518'></td><td><input type='text' name='t1519'></td><td><input type='text' name='t1520'></td>
+	<td><input type='text' name='t1521'></td><td><input type='text' name='t1522'></td><td><input type='text' name='t1523'></td><td><input type='text' name='t1524'></td>
+	<td><input type='text' name='t1525'></td><td><input type='text' name='t1526'></td><td><input type='text' name='t1527'></td><td><input type='text' name='t1528'></td>
+	<td><input type='text' name='t1529'></td><td><input type='text' name='t1530'></td><td><input type='text' name='t1531'></td><td><input type='text' name='t1532'></td>
+	<td><input type='text' name='t1533'></td><td><input type='text' name='t1534'></td><td><input type='text' name='t1535'></td><td><input type='text' name='t1536'></td>
+	<td><input type='text' name='t1537'></td><td><input type='text' name='t1538'></td><td><input type='text' name='t1539'></td><td><input type='text' name='t1540'></td>
+	<td><input type='text' name='t1541'></td><td><input type='text' name='t1542'></td><td><input type='text' name='t1543'></td><td><input type='text' name='t1544'></td>
+	<td><input type='text' name='t1545'></td><td><input type='text' name='t1546'></td><td><input type='text' name='t1547'></td><td><input type='text' name='t1548'></td>
+	<td><input type='text' name='t1549'></td><td><input type='text' name='t1550'></td><td><input type='text' name='t1551'></td><td><input type='text' name='t1552'></td>
+	<td><input type='text' name='t1553'></td><td><input type='text' name='t1554'></td><td><input type='text' name='t1555'></td><td><input type='text' name='t1556'></td>
+	<td><input type='text' name='t1557'></td><td><input type='text' name='t1558'></td><td><input type='text' name='t1559'></td><td><input type='text' name='t1560'></td>
+	<td><input type='text' name='t1561'></td><td><input type='text' name='t1562'></td><td><input type='text' name='t1563'></td><td><input type='text' name='t1564'></td>
+</tr>
+<tr>
+	<td><input type='text' value=16></td>
+	<td><input type='text' name='t161'></td><td><input type='text' name='t162'></td><td><input type='text' name='t163'></td><td><input type='text' name='t164'></td>
+	<td><input type='text' name='t165'></td><td><input type='text' name='t166'></td><td><input type='text' name='t167'></td><td><input type='text' name='t168'></td>
+	<td><input type='text' name='t169'></td><td><input type='text' name='t1610'></td><td><input type='text' name='t1611'></td><td><input type='text' name='t1612'></td>
+	<td><input type='text' name='t1613'></td><td><input type='text' name='t1614'></td><td><input type='text' name='t1615'></td><td><input type='text' name='t1616'></td>
+	<td><input type='text' name='t1617'></td><td><input type='text' name='t1618'></td><td><input type='text' name='t1619'></td><td><input type='text' name='t1620'></td>
+	<td><input type='text' name='t1621'></td><td><input type='text' name='t1622'></td><td><input type='text' name='t1623'></td><td><input type='text' name='t1624'></td>
+	<td><input type='text' name='t1625'></td><td><input type='text' name='t1626'></td><td><input type='text' name='t1627'></td><td><input type='text' name='t1628'></td>
+	<td><input type='text' name='t1629'></td><td><input type='text' name='t1630'></td><td><input type='text' name='t1631'></td><td><input type='text' name='t1632'></td>
+	<td><input type='text' name='t1633'></td><td><input type='text' name='t1634'></td><td><input type='text' name='t1635'></td><td><input type='text' name='t1636'></td>
+	<td><input type='text' name='t1637'></td><td><input type='text' name='t1638'></td><td><input type='text' name='t1639'></td><td><input type='text' name='t1640'></td>
+	<td><input type='text' name='t1641'></td><td><input type='text' name='t1642'></td><td><input type='text' name='t1643'></td><td><input type='text' name='t1644'></td>
+	<td><input type='text' name='t1645'></td><td><input type='text' name='t1646'></td><td><input type='text' name='t1647'></td><td><input type='text' name='t1648'></td>
+	<td><input type='text' name='t1649'></td><td><input type='text' name='t1650'></td><td><input type='text' name='t1651'></td><td><input type='text' name='t1652'></td>
+	<td><input type='text' name='t1653'></td><td><input type='text' name='t1654'></td><td><input type='text' name='t1655'></td><td><input type='text' name='t1656'></td>
+	<td><input type='text' name='t1657'></td><td><input type='text' name='t1658'></td><td><input type='text' name='t1659'></td><td><input type='text' name='t1660'></td>
+	<td><input type='text' name='t1661'></td><td><input type='text' name='t1662'></td><td><input type='text' name='t1663'></td><td><input type='text' name='t1664'></td>
+</tr>
+<tr>
+	<td><input type='text' value=17></td>
+	<td><input type='text' name='t171'></td><td><input type='text' name='t172'></td><td><input type='text' name='t173'></td><td><input type='text' name='t174'></td>
+	<td><input type='text' name='t175'></td><td><input type='text' name='t176'></td><td><input type='text' name='t177'></td><td><input type='text' name='t178'></td>
+	<td><input type='text' name='t179'></td><td><input type='text' name='t1710'></td><td><input type='text' name='t1711'></td><td><input type='text' name='t1712'></td>
+	<td><input type='text' name='t1713'></td><td><input type='text' name='t1714'></td><td><input type='text' name='t1715'></td><td><input type='text' name='t1716'></td>
+	<td><input type='text' name='t1717'></td><td><input type='text' name='t1718'></td><td><input type='text' name='t1719'></td><td><input type='text' name='t1720'></td>
+	<td><input type='text' name='t1721'></td><td><input type='text' name='t1722'></td><td><input type='text' name='t1723'></td><td><input type='text' name='t1724'></td>
+	<td><input type='text' name='t1725'></td><td><input type='text' name='t1726'></td><td><input type='text' name='t1727'></td><td><input type='text' name='t1728'></td>
+	<td><input type='text' name='t1729'></td><td><input type='text' name='t1730'></td><td><input type='text' name='t1731'></td><td><input type='text' name='t1732'></td>
+	<td><input type='text' name='t1733'></td><td><input type='text' name='t1734'></td><td><input type='text' name='t1735'></td><td><input type='text' name='t1736'></td>
+	<td><input type='text' name='t1737'></td><td><input type='text' name='t1738'></td><td><input type='text' name='t1739'></td><td><input type='text' name='t1740'></td>
+	<td><input type='text' name='t1741'></td><td><input type='text' name='t1742'></td><td><input type='text' name='t1743'></td><td><input type='text' name='t1744'></td>
+	<td><input type='text' name='t1745'></td><td><input type='text' name='t1746'></td><td><input type='text' name='t1747'></td><td><input type='text' name='t1748'></td>
+	<td><input type='text' name='t1749'></td><td><input type='text' name='t1750'></td><td><input type='text' name='t1751'></td><td><input type='text' name='t1752'></td>
+	<td><input type='text' name='t1753'></td><td><input type='text' name='t1754'></td><td><input type='text' name='t1755'></td><td><input type='text' name='t1756'></td>
+	<td><input type='text' name='t1757'></td><td><input type='text' name='t1758'></td><td><input type='text' name='t1759'></td><td><input type='text' name='t1760'></td>
+	<td><input type='text' name='t1761'></td><td><input type='text' name='t1762'></td><td><input type='text' name='t1763'></td><td><input type='text' name='t1764'></td>
+</tr>
+<tr>
+	<td><input type='text' value=18></td>
+	<td><input type='text' name='t181'></td><td><input type='text' name='t182'></td><td><input type='text' name='t183'></td><td><input type='text' name='t184'></td>
+	<td><input type='text' name='t185'></td><td><input type='text' name='t186'></td><td><input type='text' name='t187'></td><td><input type='text' name='t188'></td>
+	<td><input type='text' name='t189'></td><td><input type='text' name='t1810'></td><td><input type='text' name='t1811'></td><td><input type='text' name='t1812'></td>
+	<td><input type='text' name='t1813'></td><td><input type='text' name='t1814'></td><td><input type='text' name='t1815'></td><td><input type='text' name='t1816'></td>
+	<td><input type='text' name='t1817'></td><td><input type='text' name='t1818'></td><td><input type='text' name='t1819'></td><td><input type='text' name='t1820'></td>
+	<td><input type='text' name='t1821'></td><td><input type='text' name='t1822'></td><td><input type='text' name='t1823'></td><td><input type='text' name='t1824'></td>
+	<td><input type='text' name='t1825'></td><td><input type='text' name='t1826'></td><td><input type='text' name='t1827'></td><td><input type='text' name='t1828'></td>
+	<td><input type='text' name='t1829'></td><td><input type='text' name='t1830'></td><td><input type='text' name='t1831'></td><td><input type='text' name='t1832'></td>
+	<td><input type='text' name='t1833'></td><td><input type='text' name='t1834'></td><td><input type='text' name='t1835'></td><td><input type='text' name='t1836'></td>
+	<td><input type='text' name='t1837'></td><td><input type='text' name='t1838'></td><td><input type='text' name='t1839'></td><td><input type='text' name='t1840'></td>
+	<td><input type='text' name='t1841'></td><td><input type='text' name='t1842'></td><td><input type='text' name='t1843'></td><td><input type='text' name='t1844'></td>
+	<td><input type='text' name='t1845'></td><td><input type='text' name='t1846'></td><td><input type='text' name='t1847'></td><td><input type='text' name='t1848'></td>
+	<td><input type='text' name='t1849'></td><td><input type='text' name='t1850'></td><td><input type='text' name='t1851'></td><td><input type='text' name='t1852'></td>
+	<td><input type='text' name='t1853'></td><td><input type='text' name='t1854'></td><td><input type='text' name='t1855'></td><td><input type='text' name='t1856'></td>
+	<td><input type='text' name='t1857'></td><td><input type='text' name='t1858'></td><td><input type='text' name='t1859'></td><td><input type='text' name='t1860'></td>
+	<td><input type='text' name='t1861'></td><td><input type='text' name='t1862'></td><td><input type='text' name='t1863'></td><td><input type='text' name='t1864'></td>
+</tr>
+<tr>
+	<td><input type='text' value=19></td>
+	<td><input type='text' name='t191'></td><td><input type='text' name='t192'></td><td><input type='text' name='t193'></td><td><input type='text' name='t194'></td>
+	<td><input type='text' name='t195'></td><td><input type='text' name='t196'></td><td><input type='text' name='t197'></td><td><input type='text' name='t198'></td>
+	<td><input type='text' name='t199'></td><td><input type='text' name='t1910'></td><td><input type='text' name='t1911'></td><td><input type='text' name='t1912'></td>
+	<td><input type='text' name='t1913'></td><td><input type='text' name='t1914'></td><td><input type='text' name='t1915'></td><td><input type='text' name='t1916'></td>
+	<td><input type='text' name='t1917'></td><td><input type='text' name='t1918'></td><td><input type='text' name='t1919'></td><td><input type='text' name='t1920'></td>
+	<td><input type='text' name='t1921'></td><td><input type='text' name='t1922'></td><td><input type='text' name='t1923'></td><td><input type='text' name='t1924'></td>
+	<td><input type='text' name='t1925'></td><td><input type='text' name='t1926'></td><td><input type='text' name='t1927'></td><td><input type='text' name='t1928'></td>
+	<td><input type='text' name='t1929'></td><td><input type='text' name='t1930'></td><td><input type='text' name='t1931'></td><td><input type='text' name='t1932'></td>
+	<td><input type='text' name='t1933'></td><td><input type='text' name='t1934'></td><td><input type='text' name='t1935'></td><td><input type='text' name='t1936'></td>
+	<td><input type='text' name='t1937'></td><td><input type='text' name='t1938'></td><td><input type='text' name='t1939'></td><td><input type='text' name='t1940'></td>
+	<td><input type='text' name='t1941'></td><td><input type='text' name='t1942'></td><td><input type='text' name='t1943'></td><td><input type='text' name='t1944'></td>
+	<td><input type='text' name='t1945'></td><td><input type='text' name='t1946'></td><td><input type='text' name='t1947'></td><td><input type='text' name='t1948'></td>
+	<td><input type='text' name='t1949'></td><td><input type='text' name='t1950'></td><td><input type='text' name='t1951'></td><td><input type='text' name='t1952'></td>
+	<td><input type='text' name='t1953'></td><td><input type='text' name='t1954'></td><td><input type='text' name='t1955'></td><td><input type='text' name='t1956'></td>
+	<td><input type='text' name='t1957'></td><td><input type='text' name='t1958'></td><td><input type='text' name='t1959'></td><td><input type='text' name='t1960'></td>
+	<td><input type='text' name='t1961'></td><td><input type='text' name='t1962'></td><td><input type='text' name='t1963'></td><td><input type='text' name='t1964'></td>
+</tr>
+<tr>
+	<td><input type='text' value=20></td>
+	<td><input type='text' name='t201'></td><td><input type='text' name='t202'></td><td><input type='text' name='t203'></td><td><input type='text' name='t204'></td>
+	<td><input type='text' name='t205'></td><td><input type='text' name='t206'></td><td><input type='text' name='t207'></td><td><input type='text' name='t208'></td>
+	<td><input type='text' name='t209'></td><td><input type='text' name='t2010'></td><td><input type='text' name='t2011'></td><td><input type='text' name='t2012'></td>
+	<td><input type='text' name='t2013'></td><td><input type='text' name='t2014'></td><td><input type='text' name='t2015'></td><td><input type='text' name='t2016'></td>
+	<td><input type='text' name='t2017'></td><td><input type='text' name='t2018'></td><td><input type='text' name='t2019'></td><td><input type='text' name='t2020'></td>
+	<td><input type='text' name='t2021'></td><td><input type='text' name='t2022'></td><td><input type='text' name='t2023'></td><td><input type='text' name='t2024'></td>
+	<td><input type='text' name='t2025'></td><td><input type='text' name='t2026'></td><td><input type='text' name='t2027'></td><td><input type='text' name='t2028'></td>
+	<td><input type='text' name='t2029'></td><td><input type='text' name='t2030'></td><td><input type='text' name='t2031'></td><td><input type='text' name='t2032'></td>
+	<td><input type='text' name='t2033'></td><td><input type='text' name='t2034'></td><td><input type='text' name='t2035'></td><td><input type='text' name='t2036'></td>
+	<td><input type='text' name='t2037'></td><td><input type='text' name='t2038'></td><td><input type='text' name='t2039'></td><td><input type='text' name='t2040'></td>
+	<td><input type='text' name='t2041'></td><td><input type='text' name='t2042'></td><td><input type='text' name='t2043'></td><td><input type='text' name='t2044'></td>
+	<td><input type='text' name='t2045'></td><td><input type='text' name='t2046'></td><td><input type='text' name='t2047'></td><td><input type='text' name='t2048'></td>
+	<td><input type='text' name='t2049'></td><td><input type='text' name='t2050'></td><td><input type='text' name='t2051'></td><td><input type='text' name='t2052'></td>
+	<td><input type='text' name='t2053'></td><td><input type='text' name='t2054'></td><td><input type='text' name='t2055'></td><td><input type='text' name='t2056'></td>
+	<td><input type='text' name='t2057'></td><td><input type='text' name='t2058'></td><td><input type='text' name='t2059'></td><td><input type='text' name='t2060'></td>
+	<td><input type='text' name='t2061'></td><td><input type='text' name='t2062'></td><td><input type='text' name='t2063'></td><td><input type='text' name='t2064'></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<br>
+
+<table align='center'>
+<tr>
+<td>
+<div>
+<table class='blank'>
+<tr>
+<td style='text-align:center;'><input type='button' value='导出参数' onclick='submit1()'></td>
+</form>
+<td style='text-align:center;'><input type="button" value="下载" onclick="window.location.href='data/rtsp_queue.bin'"></td>
+<td width=50px></td>
+<form name='cameraqueueupload' method='POST' ENCTYPE="multipart/form-data" target='server'>
+<td style='width:300px;text-align:center;'><input type='file' name='FILE1' id='FILE1' style='width:160px'><input type='button' value='导入参数' onclick='submit2()'></td>
+</form>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+
+<!--底部信息-->
+<div style="width:950px;margin:50px auto;line-height:24px;clear:both; font-weight:normal; font-size:12px;">
+<ul id="bottominfo">
+<li><a align="right" href="">@2000-2015 上海远哲电子技术有限公司</a></li>
+</div>
+</body>
+</html>

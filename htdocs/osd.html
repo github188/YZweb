@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>OSD系统参数配置</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<script type="text/javascript" language="javascript">
+	function defaultvalue(){
+		document.getElementById("r11").value = 255;
+		document.getElementById("g11").value = 255;
+		document.getElementById("b11").value = 255;
+		document.getElementById("r21").value = 10;
+		document.getElementById("g21").value = 10;
+		document.getElementById("b21").value = 128;
+		document.getElementById("monitor font size").value = 36;
+		document.getElementById("monitor font x axis position").value = 895;
+		document.getElementById("monitor font y axis position").value = 65;
+		document.getElementById("r31").value = 255;
+		document.getElementById("g31").value = 255;
+		document.getElementById("b31").value = 255;
+		document.getElementById("r41").value = 10;
+		document.getElementById("g41").value = 10;
+		document.getElementById("b41").value = 128;
+		document.getElementById("time font size").value = 36;
+		document.getElementById("time font x axis position").value = 825;
+		document.getElementById("time font y axis position").value = 20;
+		document.getElementById("r51").value = 255;
+		document.getElementById("g51").value = 255;
+		document.getElementById("b51").value = 255;
+		document.getElementById("r61").value = 128;
+		document.getElementById("g61").value = 10;
+		document.getElementById("b61").value = 10;
+		document.getElementById("single image channel font size").value = 24;
+		document.getElementById("single image channel font x axis position").value = 50;
+		document.getElementById("single image channel font y axis position").value = 1032;
+		document.getElementById("r71").value = 255;
+		document.getElementById("g71").value = 255;
+		document.getElementById("b71").value = 255;
+		document.getElementById("r81").value = 128;
+		document.getElementById("g81").value = 10;
+		document.getElementById("b81").value = 10;
+		document.getElementById("muti image channel font size").value = 24;
+	}
+</script>
+</head>
+
+<body>
+<div>
+	<iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src='header.html' width="100%"  height="110"></iframe>
+</div>
+<div>
+<table class="box3" align="center">
+<tr>
+<td class='caption' style='text-align:left;'>MONITOR</td>
+</tr>
+<tr>
+<td style='width:30%;'>监视器字体颜色:(范围在0~255)</td>
+</tr>
+<tr>
+	<td class='base'>R</td>
+	<td><input type='text' name='r11' id='r11' style='width:50px;'></td>
+	<td class='base'>G</td>
+	<td><input type='text' name='g11' id='g11' style='width:50px;'></td>
+	<td class='base'>B</td>
+	<td><input type='text' name='b11' id='b11' style='width:50px;'></td>
+</tr>
+<tr>
+<td style='width:30%;'>监视器字体边框颜色:(范围在0~255)</td>
+</tr>
+<tr>
+	<td class='base'>R</td>
+	<td><input type='text' name='r21' id='r21' style='width:50px;'></td>
+	<td class='base'>G</td>
+	<td><input type='text' name='g21' id='g21' style='width:50px;'></td>
+	<td class='base'>B</td>
+	<td><input type='text' name='b21' id='b21' style='width:50px;'></td>
+</tr>
+<tr height=17.5></tr>
+<tr>
+	<td class='base' style='width:20%;'>监视器字体大小:</td>
+	<td><input type='text' name='monitor font size' id='monitor font size' style='width:50px;'>(范围在16~500)</td>
+	<td></td><td></td>
+	<td class='base' style='width:20%;'>监视器字体X轴位置:</td>
+	<td><input type='text' name='monitor font x axis position' id='monitor font x axis position' style='width:50px;'>(范围在0~1920)</td>
+</tr>
+<tr height=17.5></tr>
+<tr>
+	<td class='base' style='width:20%;'>监视器字体Y轴位置:</td>
+	<td><input type='text' name='monitor font y axis position' id='monitor font y axis position' style='width:50px;'>(范围在0~1080)</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+<div>
+<table class="box3" align="center">
+<tr>
+<td class='caption' style='text-align:left;'>TIME</td>
+</tr>
+<tr>
+<td style='width:30%;'>时间字体颜色:(范围在0~255)</td>
+</tr>
+<tr>
+	<td class='base'>R</td>
+	<td><input type='text' name='r31' id='r31' style='width:50px;'></td>
+	<td class='base'>G</td>
+	<td><input type='text' name='g31' id='g31' style='width:50px;'></td>
+	<td class='base'>B</td>
+	<td><input type='text' name='b31' id='b31' style='width:50px;'></td>
+</tr>
+<tr>
+<td style='width:30%;'>时间字体边框颜色:(范围在0~255)</td>
+</tr>
+<tr>
+	<td class='base'>R</td>
+	<td><input type='text' name='r41' id='r41' style='width:50px;'></td>
+	<td class='base'>G</td>
+	<td><input type='text' name='g41' id='g41' style='width:50px;'></td>
+	<td class='base'>B</td>
+	<td><input type='text' name='b41' id='b41' style='width:50px;'></td>
+</tr>
+<tr height=17.5></tr>
+<tr>
+	<td class='base' style='width:20%;'>时间字体大小:</td>
+	<td><input type='text' name='time font size' id='time font size' style='width:50px;'>(范围在16~500)</td>
+	<td></td><td></td>
+	<td class='base' style='width:20%;'>时间字体X轴位置:</td>
+	<td><input type='text' name='time font x axis position' id='time font x axis position' style='width:50px;'>(范围在0~1920)</td>
+</tr>
+<tr height=17.5></tr>
+<tr>
+	<td class='base' style='width:20%;'>时间字体Y轴位置:</td>
+	<td><input type='text' name='time font y axis position' id='time font y axis position' style='width:50px;'>(范围在0~1080)</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+<div>
+<table class="box3" align="center">
+<tr>
+<td class='caption' style='text-align:left;'>CHANNEL</td>
+</tr>
+<tr>
+<td style='width:30%;'>单画面通道字体颜色:(范围在0~255)</td>
+</tr>
+<tr>
+	<td class='base'>R</td>
+	<td><input type='text' name='r51' id='r51' style='width:50px;'></td>
+	<td class='base'>G</td>
+	<td><input type='text' name='g51' id='g51' style='width:50px;'></td>
+	<td class='base'>B</td>
+	<td><input type='text' name='b51' id='b51' style='width:50px;'></td>
+</tr>
+<tr>
+<td style='width:30%;'>单通道画面字体边框颜色:(范围在0~255)</td>
+</tr>
+<tr>
+	<td class='base'>R</td>
+	<td><input type='text' name='r61' id='r61' style='width:50px;'></td>
+	<td class='base'>G</td>
+	<td><input type='text' name='g61' id='g61' style='width:50px;'></td>
+	<td class='base'>B</td>
+	<td><input type='text' name='b61' id='b61' style='width:50px;'></td>
+</tr>
+<tr height=17.5></tr>
+<tr>
+	<td class='base' style='width:20%;'>单通道画面字体大小:</td>
+	<td><input type='text' name='single image channel font size' id='single image channel font size' style='width:50px;'>(范围在16~500)</td>
+	<td></td><td></td>
+	<td class='base' style='width:20%;'>单通道画面字体X轴位置:</td>
+	<td><input type='text' name='single image channel font x axis position' id='single image channel font x axis position' style='width:50px;'>(范围在0~1920)</td>
+</tr>
+<tr height=17.5></tr>
+<tr>
+	<td class='base' style='width:20%;'>单通道画面字体Y轴位置:</td>
+	<td><input type='text' name='single image channel font y axis position' id='single image channel font y axis position' style='width:50px;'>(范围在0~1080)</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+<div>
+<table class="box3" align="center">
+<tr>
+<td class='caption' style='text-align:left;'>CHANNEL4_9_16</td>
+</tr>
+<tr>
+<td style='width:30%;'>多通道画面字体颜色:(范围在0~255)</td>
+</tr>
+<tr>
+	<td class='base'>R</td>
+	<td><input type='text' name='r71' id='r71' style='width:50px;'></td>
+	<td class='base'>G</td>
+	<td><input type='text' name='g71' id='g71' style='width:50px;'></td>
+	<td class='base'>B</td>
+	<td><input type='text' name='b71' id='b71' style='width:50px;'></td>
+</tr>
+<tr>
+<td style='width:30%;'>多通道画面字体边框颜色:(范围在0~255)</td>
+</tr>
+<tr>
+	<td class='base'>R</td>
+	<td><input type='text' name='r81' id='r81' style='width:50px;'></td>
+	<td class='base'>G</td>
+	<td><input type='text' name='g81' id='g81' style='width:50px;'></td>
+	<td class='base'>B</td>
+	<td><input type='text' name='b81' id='b81' style='width:50px;'></td>
+</tr>
+<tr height=17.5></tr>
+<tr>
+	<td class='base' style='width:10%;'>多通道画面字体大小:(范围在16~500)</td>
+	<td><input type='text' name='muti image channel font size' id='muti image channel font size' style='width:50px;'></td>
+</tr>
+</table>
+</div>
+
+<br>
+
+<div style='text-align:center;'>
+<table style='margin:auto;'>
+<tr>
+<td style='text-align:center;'><input type='submit' name='ACTION' value='默认参数' onclick='defaultvalue()'></td>
+<td style='width:100px;'></td>
+<td style='text-align:center;'><input type='submit' name='ACTION' value='导入参数'></td>
+<td style='width:100px;'></td>
+<td style='text-align:center;'><input type='submit' name='ACTION' value='导出参数'></td>
+</tr>
+</table>
+</div>
+
+<!--底部信息-->
+<div style="width:950px;margin:50px auto;line-height:24px;clear:both; font-weight:normal; font-size:12px;">
+<ul id="bottominfo">
+<li><a align="right" href="">@2000-2015 上海远哲电子技术有限公司</a></li>
+</div>
+</body>
+</html>
